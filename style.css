@@ -1,0 +1,47 @@
+.control {
+    width: 750px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    vertical-align: middle;
+}
+
+#root {
+    margin: 0 auto;
+    width: 750px;
+    height: 480px;
+    display: grid;
+    grid-template-columns: repeat(250, 1fr);
+    grid-template-rows: repeat(160, 1fr);
+    grid-gap: 1px;
+    
+}
+
+.elem {
+    border: 1px solid black;
+    margin: -1px;
+    box-sizing: border-box;
+}
+
+#start {
+    border-radius: 5px;
+    background: #1dd8ac;
+    color: white;
+    font-weight: 500;
+}
+
+#start:focus {
+    outline: none;
+}
+
+#root .active {
+    border: 1px solid gold !important;
+    z-index: 999;
+}
+
+.select {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
